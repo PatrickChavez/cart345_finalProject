@@ -1,0 +1,687 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400;1,9..40,700&family=La+Belle+Aurore&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Playfair:ital,opsz,wght@0,5..1200,400;0,5..1200,700;1,5..1200,400;1,5..1200,700&family=Quicksand:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 8rem;
+  font-family: "La Belle Aurore", cursive;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Caveat", cursive;
+}
+
+h1,
+h2 {
+  color: #e7bb69;
+}
+
+a,
+a:visited {
+  color: #e7bb69;
+}
+
+a:hover {
+  color: rgb(132, 25, 19);
+}
+
+a:active {
+  color: blue;
+}
+
+/* W3Schools Navigation Bar */
+/* https://www.w3schools.com/css/css_navbar.asp */
+
+nav {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+nav:hover {
+  opacity: 1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  z-index: 10;
+  font-size: 1.5em;
+}
+
+li {
+  float: left;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #dbd1d0;
+}
+
+li a:visited {
+  color: #dbd1d0;
+}
+
+li a:hover {
+  color: black;
+  background-color: #dbd1d0;
+}
+
+li a:active {
+  color: white;
+  background-color: #992200;
+}
+
+.active {
+  background-color: #992200;
+}
+
+.navRightSide {
+  float: right;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+/* Video Area */
+
+.videoArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoArea video {
+  border: 1em outset #cc6600;
+  box-shadow: 10px 5px 10px black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex: auto;
+}
+
+.footerContainer {
+  background: black;
+  border-radius: 0.4em;
+  width: 10%;
+  height: auto;
+  /* min-height: 0.5em; */
+  box-shadow: 10px 5px 10px black;
+  margin: 5% 4%;
+  border: thick double #cc6600;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2% 3%;
+}
+
+.footerContainer a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footerContainer.fortyText {
+  font-size: 2.5rem;
+}
+
+/* Code from W3Schools */
+/* https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
+.bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+}
+
+.introTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twentyText {
+  font-family: "Quicksand", sans-serif;
+}
+
+.fortyText {
+  font-family: "Playfair", serif;
+}
+
+.twentyTextHand,
+.fortyTextHand {
+  font-size: 2rem;
+}
+
+.twentyTextHand {
+  font-family: "Caveat", cursive;
+}
+
+.fortyTextHand {
+  font-family: "La Belle Aurore", cursive;
+}
+
+/* Speech Bubble Code from Lea Verou */
+/* https://projects.verou.me/bubbly/ */
+.twentyTextbox,
+.fortyTextbox {
+  position: relative;
+  background: black;
+  border-radius: 0.4em;
+  width: 40%;
+  min-width: 600px;
+  min-height: 8em;
+  box-shadow: 10px 5px 10px black;
+  margin: 7% 0;
+  border: thick double #cc6600;
+}
+
+.twentyTextbox {
+  margin-left: 5%;
+}
+
+.twentyTextbox:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border: 45px solid transparent;
+  border-right-color: black;
+  border-left: 0;
+  margin-top: -45px;
+  margin-left: -45px;
+  z-index: -1;
+}
+
+.twentyTextbox p,
+.fortyTextbox p {
+  padding: 1% 4%;
+  margin: 3% 1%;
+  font-size: 2em;
+  color: white;
+}
+
+.fortyTextbox {
+  margin-right: 5%;
+  left: 55%;
+}
+
+.fortyTextbox:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 45px solid transparent;
+  border-left-color: black;
+  border-right: 0;
+  margin-top: -45px;
+  margin-right: -45px;
+  z-index: -1;
+}
+
+/* Index */
+.indexTitle {
+  text-align: center;
+  padding: 5% 2%;
+  margin: auto;
+  color: #ffa922;
+  font-size: 2rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+.indexTitle h2 {
+  color: #ffa922;
+}
+
+.indexTitle a {
+  color: #ffa922;
+  font-size: 4rem;
+  transition: color 0.5s;
+  font-family: "La Belle Aurore", cursive;
+  font-size: 6rem;
+}
+
+.indexTitle a:hover {
+  color: rgb(122, 23, 23);
+}
+
+/* Intro */
+
+.introBody {
+  background: rgb(122, 23, 23);
+}
+
+/* Gradient code from CSS Gradient */
+/* https://cssgradient.io/ */
+.redGradientArea {
+  min-height: 2500px;
+}
+
+.orangeGradientArea {
+  min-height: 1000px;
+}
+
+.yellowGradientArea {
+  min-height: 100vh;
+  width: auto;
+}
+
+.redGradientArea {
+  background: rgb(194, 77, 38);
+  background: linear-gradient(
+    0deg,
+    rgba(194, 77, 38, 1) 0%,
+    rgba(122, 23, 23, 1) 15%
+  );
+}
+
+.orangeGradientArea {
+  position: relative;
+  background: rgb(195, 145, 35);
+  background: linear-gradient(
+    0deg,
+    rgba(195, 145, 35, 1) 0%,
+    rgba(194, 77, 38, 1) 15%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Code from  sarah_edo */
+/* https://cssgrid-generator.netlify.app/ */
+.yellowGradientArea {
+  background: rgb(195, 145, 35);
+  font-size: 11rem;
+  font-family: "DM Sans", sans-serif;
+  font-style: italic;
+  text-align: right;
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  overflow: hidden; /* Hide scrollbars */
+  transition: all 0.5s;
+  /* Code from guy_m */
+  /* https://stackoverflow.com/questions/8114657/how-to-style-the-parent-element-when-hovering-a-child-element */
+  pointer-events: none;
+}
+
+.yellowGradientArea a {
+  grid-column: 2;
+  grid-row: 1/2;
+  padding: 0 5%;
+  /* Code from W3Schools */
+  /* https://www.w3schools.com/css/css_align.asp */
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  pointer-events: auto;
+}
+
+.yellowGradientArea a:hover {
+  font-family: "Playfair Display", serif;
+  animation: rotate-scale-up-ver 0.65s linear both;
+}
+
+.yellowGradientArea:hover {
+  background: black;
+}
+
+.yellowGradientArea video {
+  grid-column: 1;
+  grid-row: 1/2;
+  /* Code from W3Schools */
+  /* https://www.w3schools.com/css/css_align.asp */
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+/* Code from Paolo Bergantino/Sarfaraaz */
+/* https://stackoverflow.com/questions/1191464/is-there-a-way-to-use-use-text-as-the-background-with-css */
+.twentyTextBG,
+.fortyTextBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -3;
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: justify;
+  color: #db7d09;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.twentyTextBG {
+  font-family: "DM Sans", sans-serif;
+}
+
+.fortyTextBG {
+  font-family: "Playfair Display", serif;
+}
+
+/* Code from Mike/rockfeeler */
+/* https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered */
+.twentyCard:hover + .twentyTextBG,
+.fortyCard:hover + .fortyTextBG {
+  opacity: 1;
+}
+
+.cardArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Code from W3Schools */
+/* https://www.w3schools.com/howto/howto_css_cards.asp */
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  min-width: 400px;
+  min-height: 300px;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  margin: 5%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0px 0px 49px -8px #000000;
+}
+
+/* Add some padding inside the card container */
+.cardContainer {
+  padding: 4%;
+  min-height: 730px;
+  border: solid 3px black;
+}
+
+/* Code from W3Schools */
+/* https://www.w3schools.com/howto/howto_css_image_center.asp */
+.cardContainer img {
+  border: thick double black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.card.twentyText {
+  font-size: 1.4rem;
+}
+
+.card.fortyText {
+  font-size: 1.5rem;
+}
+
+/* Forest Page */
+
+.forestBody {
+  background-color: #1f320a;
+}
+
+.poemArea {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  margin: 4%;
+  color: #e7bb69;
+}
+
+.shaking {
+  animation: vertical-shaking 0.5s infinite;
+}
+
+.dandelionContainer {
+  /* display: inline-block; */
+  position: fixed;
+  /* animation: 3s infinite fallingLeaves; */
+  z-index: 9;
+}
+
+.dandelionContainer img:nth-child(1) {
+  position: absolute;
+  top: -800px;
+  left: 200px;
+  animation: 13s infinite fallingLeaves;
+}
+
+.dandelionContainer img:nth-child(2) {
+  position: absolute;
+  top: -700px;
+  left: 500px;
+  animation: 20s infinite fallingLeaves;
+}
+
+.dandelionContainer img:nth-child(3) {
+  position: absolute;
+  top: -550px;
+  left: 350px;
+  animation: 10s infinite fallingLeaves;
+}
+
+.dandelionContainer img:nth-child(4) {
+  position: absolute;
+  top: -500px;
+  left: 100px;
+  animation: 17s infinite fallingLeaves;
+}
+
+.dandelionContainer img:nth-child(5) {
+  position: absolute;
+  top: -650px;
+  left: 270px;
+  animation: 22s infinite fallingLeaves;
+}
+
+.dandelionContainer img:nth-child(6) {
+  position: absolute;
+  top: -800px;
+  left: 400px;
+  animation: 20s infinite fallingLeaves;
+}
+
+.dandelionContainer img:nth-child(7) {
+  position: absolute;
+  top: -420px;
+  left: 235px;
+  animation: 15s infinite fallingLeaves;
+}
+
+/* Water */
+
+.waterBody {
+  position: relative;
+}
+
+.waterArea {
+  /* position: fixed; */
+  z-index: 10;
+}
+
+.waterArea p {
+  filter: blur(0.7px);
+}
+
+/* Typing */
+.typingBody {
+  overflow-x: hidden;
+}
+
+/* Typewritter Code from Geoff Graham */
+/* https://codepen.io/geoffgraham/pen/jrWwWM */
+.typeArea1,
+.typeArea2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; */
+}
+
+.typeArea1 {
+  animation: typing 3s linear;
+}
+
+.typeArea2 {
+  animation: waitAnimateTyping 9s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+/* Credits */
+.creditsBody {
+  text-align: center;
+  margin-top: 5%;
+  background: black;
+}
+
+.creditsBody h2 {
+  font-size: 6rem;
+}
+
+.creditsBody a {
+  display: block;
+  margin: 2% 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-11-18 11:44:59
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-scale-up-ver
+ * ----------------------------------------
+ */
+@keyframes rotate-scale-up-ver {
+  0% {
+    transform: scale(1) rotateY(0);
+  }
+  50% {
+    transform: scale(2) rotateY(180deg);
+  }
+  100% {
+    transform: scale(1) rotateY(360deg);
+  }
+}
+
+/* Code from Unused CSS*/
+/* https://unused-css.com/blog/css-shake-animation/ */
+
+@keyframes vertical-shaking {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fallingLeaves {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  /* 75% {
+    opacity: 1;
+  } */
+  100% {
+    transform: translate(1000px, 1000px) rotate(360deg);
+    /* transform: translateX(1000px); */
+    opacity: 0;
+  }
+}
+
+/* Typewritter Code from Geoff Graham */
+/* https://codepen.io/geoffgraham/pen/jrWwWM */
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/*
+Generated by
+waitanimate.wstone.uk
+*/
+
+.waitAnimateTyping {
+  animation: waitAnimateTyping 9s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes waitAnimateTyping {
+  0% {
+    width: 0;
+  }
+  22.222% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
