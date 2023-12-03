@@ -575,6 +575,12 @@ footer {
   font-size: 6rem;
 }
 
+.creditsBody li a {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
 .creditsBody a {
   display: block;
   margin: 2% 0;
