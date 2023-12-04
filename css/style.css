@@ -42,6 +42,8 @@ a:active {
 nav {
   opacity: 0;
   transition: opacity 0.5s;
+  z-index: 98;
+  position: fixed;
 }
 
 nav:hover {
