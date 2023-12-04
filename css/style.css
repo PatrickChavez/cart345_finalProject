@@ -531,13 +531,24 @@ footer {
   position: relative;
 }
 
-.waterArea {
-  /* position: fixed; */
-  z-index: 10;
+.waterBody h1,
+h2,
+p {
+  filter: blur(0.7px);
 }
 
-.waterArea p {
-  filter: blur(0.7px);
+/* Overlay code from Chris */
+/* https://stackoverflow.com/questions/4809644/css-filter-on-whole-page */
+.waterArea {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  /* background: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=60); */
 }
 
 /* Typing */
